@@ -67,6 +67,6 @@
 
 // export default Home
 
-export default function OK(){
-    return<div>OK</div>
+export default function OK() {
+    return <div>OK</div>
 }

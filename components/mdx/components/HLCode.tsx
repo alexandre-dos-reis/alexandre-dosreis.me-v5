@@ -62,7 +62,10 @@ export default function HLCode({
                         {tokens.map((line, i) => (
                             <div key={i} {...getLineProps({ line, key: i })}>
                                 {line.map((token, key) => (
-                                    <span key={key} {...getTokenProps({ token, key })} />
+                                    <span
+                                        key={key}
+                                        {...getTokenProps({ token, key })}
+                                    />
                                 ))}
                             </div>
                         ))}

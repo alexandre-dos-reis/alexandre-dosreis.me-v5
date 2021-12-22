@@ -1,6 +1,6 @@
-@import "styles/mixins/layout";
-@import "styles/globals/variables";
-@import "styles/mixins/flexCentered";
+@import 'styles/mixins/layout';
+@import 'styles/globals/variables';
+@import 'styles/mixins/flexCentered';
 
 /*
 LOCALES VARIABLES
@@ -36,7 +36,7 @@ $padding: 10px;
     a {
         @include flexCentered;
         padding: $padding;
-        font-family: "balsamiq";
+        font-family: 'balsamiq';
         font-size: 1.1rem;
         letter-spacing: 1px;
         color: $main;
@@ -57,7 +57,7 @@ $padding: 10px;
     margin-left: 0;
 
     a {
-        font-family: "caveat";
+        font-family: 'caveat';
         padding: $padding;
         padding-left: 0;
         font-size: 2rem;

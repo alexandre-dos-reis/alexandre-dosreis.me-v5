@@ -1,6 +1,6 @@
-@import "styles/mixins/layout";
-@import "styles/mixins/shadows";
-@import "styles/globals/variables";
+@import 'styles/mixins/layout';
+@import 'styles/mixins/shadows';
+@import 'styles/globals/variables';
 
 .header {
     position: sticky;
@@ -15,8 +15,8 @@
     grid-template-columns: 2fr 1fr;
     column-gap: 64px;
     grid-template-areas:
-        "img img"
-        "welcome lastArticles";
+        'img img'
+        'welcome lastArticles';
 
     aside ul li {
         margin-bottom: 15px;
@@ -28,7 +28,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         img {
             border-radius: 50%;
             border: 1px solid $main;
@@ -51,9 +51,9 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
-        "articleHeader articleHeader"
-        "article tableOfContent"
-        "footer footer";
+        'articleHeader articleHeader'
+        'article tableOfContent'
+        'footer footer';
 
     column-gap: 64px;
 
@@ -111,5 +111,5 @@
     text-align: center;
     margin: 40px 0;
     color: $grey;
-    font-family: "catamaran";
+    font-family: 'catamaran';
 }

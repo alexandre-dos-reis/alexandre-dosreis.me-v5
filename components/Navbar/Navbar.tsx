@@ -42,7 +42,10 @@ const Navbar: NextPage<NavbarProps> = ({ mode, categories }) => {
                                 </Link>
                             </li>
                             <li>
-                                <DropDownMenu title="Articles" categories={categories}/>
+                                <DropDownMenu
+                                    title="Articles"
+                                    categories={categories}
+                                />
                             </li>
                             <NavbarElements
                                 className={styles.publicNavbarLinks}

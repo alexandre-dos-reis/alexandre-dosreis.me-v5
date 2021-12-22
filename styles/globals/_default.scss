@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
     margin-bottom: 15px;
-    font-family: "alatsi";
+    font-family: 'alatsi';
     a {
         font-size: inherit;
         color: $grey;
@@ -80,7 +80,7 @@ h6 {
     font-size: 1.1rem;
 }
 
-@import "../mixins/regularText";
+@import '../mixins/regularText';
 
 p {
     @include regularText;
