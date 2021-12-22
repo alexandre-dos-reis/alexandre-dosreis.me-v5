@@ -17,7 +17,7 @@ export const getOneCategory = async (slug: string) =>
     await fetchData(
         ITEM +
             '?' +
-            `search=${slug}` +
+            `filter[slug][_eq]=${slug}` +
             '&' +
             'fields=*id,name,slug' +
             '&' +

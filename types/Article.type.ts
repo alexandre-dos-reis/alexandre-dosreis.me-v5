@@ -1,4 +1,4 @@
-export interface ArticleHome {
+export interface ArticleListItem {
     id: number
     title: string
     slug: string

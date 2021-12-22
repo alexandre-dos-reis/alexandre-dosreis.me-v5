@@ -1,0 +1,89 @@
+@import "styles/mixins/layout";
+@import "styles/globals/variables";
+@import "styles/mixins/flexCentered";
+
+/*
+LOCALES VARIABLES
+*/
+
+$margin: 6px;
+$padding: 10px;
+
+/**/
+
+.spacer {
+    width: max-content;
+    height: $topNavbarSpacer;
+}
+
+.navbar {
+    @include layout;
+    display: flex;
+    margin-bottom: $default-margin-bottom;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        @include flexCentered;
+        width: max-content;
+        align-items: flex-end;
+    }
+
+    li {
+        margin: $margin;
+    }
+
+    a {
+        @include flexCentered;
+        padding: $padding;
+        font-family: "balsamiq";
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: $main;
+        // &:hover {
+        //     text-decoration: underline;
+        //     text-underline-offset: 10px;
+        //     text-decoration-thickness: 2px;
+        // }
+    }
+}
+
+.homeSVG {
+    fill: $main;
+}
+
+.creatorName {
+    margin: $margin;
+    margin-left: 0;
+
+    a {
+        font-family: "caveat";
+        padding: $padding;
+        padding-left: 0;
+        font-size: 2rem;
+        color: $dark;
+        &:hover {
+            color: $flashy;
+        }
+    }
+}
+
+.socialNav {
+    @include flexCentered;
+
+    a {
+        @include flexCentered;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+        // fill: $grey;
+        // &:hover {
+        //     fill: $main;
+        // }
+    }
+}
+
+// .publicNavbarLinks, .adminNavbarLinks {
+// }

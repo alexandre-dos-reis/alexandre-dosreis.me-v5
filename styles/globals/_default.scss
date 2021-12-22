@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+}
+
+html,
+body {
+    // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: $bgColor;
+    color: $main;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    font-family: "alatsi";
+    a {
+        font-size: inherit;
+        color: $grey;
+        font-family: inherit;
+        &:hover {
+            color: $flashy;
+        }
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: $light;
+
+    a {
+        font-size: 1.7rem;
+        color: inherit;
+        font-family: inherit;
+        &:hover {
+            color: $flashy;
+        }
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+
+    a {
+        font-size: 1.7rem;
+        color: $grey;
+        font-family: inherit;
+        &:hover {
+            color: $flashy;
+        }
+    }
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+@import "../mixins/regularText";
+
+p {
+    @include regularText;
+    margin-bottom: 30px;
+}
+
+a {
+    @include regularText;
+    color: $dark;
+    text-decoration: none;
+    &:hover {
+        color: $flashy;
+    }
+}
+
+svg {
+    fill: $main;
+}

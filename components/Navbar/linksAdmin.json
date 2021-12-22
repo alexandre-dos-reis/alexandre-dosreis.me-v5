@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Accueil du site",
+        "url": "/"
+    },
+    {
+        "title": "Créer un article",
+        "url": "/admin/articles/add"
+    },
+    {
+        "title": "Editer les articles",
+        "url": "/admin/articles/add"
+    },
+    {
+        "title": "Créer une commande Linux",
+        "url": "/admin/linux-commands/add"
+    },
+    {
+        "title": "Editer les commandes Linux",
+        "url": "/admin/linux-commands"
+    }
+]

@@ -27,3 +27,14 @@ export const getOneArticle = async (slug: string) =>
             '&' +
             'filter[status]=published'
     )
+
+export const getArticlesByCategory = async (slug: string) =>
+    await fetchData(
+        ITEM +
+            '?' +
+            'fields=id,title,slug,status,category.name,category.slug' +
+            '&' +
+            'filter[status]=published' +
+            '&' +
+            `filter[category][slug][_eq]=${slug}`
+    )

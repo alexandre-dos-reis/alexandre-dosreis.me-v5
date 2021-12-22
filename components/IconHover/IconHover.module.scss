@@ -1,0 +1,29 @@
+@import "/styles/globals/variables";
+
+.container {
+    position: relative;
+
+    & .arrow {
+        display: inline;
+        position: absolute;
+        color: $grey;
+        // left: -40px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    &:hover .arrow {
+        color: $flashy;
+        display: inline;
+        position: absolute;
+        animation: selection infinite 0.6s linear;
+        // animation-fill-mode: forwards;
+        // top: 0;
+    }
+}
+
+@keyframes selection {
+    50% {
+        margin-left: -10px;
+    }
+
+}

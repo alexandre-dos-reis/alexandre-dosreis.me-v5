@@ -1,0 +1,43 @@
+@mixin normalizeFonts {
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     @include normalizeFonts();
+//     font-family: 'roboto-mono';
+//     src: url('../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');    
+// }
+
+@font-face {
+    @include normalizeFonts();
+    font-family: 'alatsi';
+    src: url('../fonts/Alatsi/Alatsi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    @include normalizeFonts();
+    font-family: 'balsamiq';
+    src: url('../fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    @include normalizeFonts();
+    font-family: 'catamaran';
+    src: url('../fonts/Catamaran/static/Catamaran-Light.ttf') format('truetype');
+}
+
+@font-face {
+    @include normalizeFonts();
+    font-family: 'assistant';
+    src: url('../fonts/Assistant/static/Assistant-Light.ttf') format('truetype');
+}
+
+@font-face {
+    @include normalizeFonts();
+    font-family: 'caveat';
+    src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+}
+
+
+

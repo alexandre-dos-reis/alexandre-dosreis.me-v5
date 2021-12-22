@@ -1,0 +1,40 @@
+@import "styles/globals/variables";
+
+.container {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: -11px;
+    left: 83px;
+}
+
+.active {
+    z-index: 1000;
+    display: grid;
+    position: absolute;
+    background-color: $main;
+    border-radius: 10px;
+    padding: 10px;
+    top: 40px;
+    left: -50px;
+    grid-template-columns: 1fr 1fr;
+
+    a {
+        display: flex;
+        width: 170px;
+        justify-content: left !important;
+        color: $bgColor !important;
+        margin: 5px;
+        font-size: 1rem;
+
+        &:hover {
+            color: $flashy !important;
+        }
+    }
+}
+
+.inactive {
+    display: none;
+}

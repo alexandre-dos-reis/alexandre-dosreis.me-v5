@@ -1,0 +1,4 @@
+@mixin layout {
+    width: clamp(600px, 70vw, 1100px);
+    margin: 0 auto;
+}

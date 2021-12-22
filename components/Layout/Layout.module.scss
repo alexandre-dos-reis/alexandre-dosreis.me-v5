@@ -1,0 +1,115 @@
+@import "styles/mixins/layout";
+@import "styles/mixins/shadows";
+@import "styles/globals/variables";
+
+.header {
+    position: sticky;
+    top: -$topNavbarSpacer;
+    z-index: 1000;
+    backdrop-filter: blur(7px);
+}
+
+.homeLayout {
+    @include layout;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 64px;
+    grid-template-areas:
+        "img img"
+        "welcome lastArticles";
+
+    aside ul li {
+        margin-bottom: 15px;
+    }
+
+    picture {
+        grid-area: img;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            border-radius: 50%;
+            border: 1px solid $main;
+            // @include shadow-mid;
+        }
+    }
+
+    section {
+        grid-area: welcome;
+    }
+
+    aside {
+        grid-area: lastArticles;
+    }
+}
+
+.articleLayout {
+    width: clamp(600px, 70vw, 1200px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "articleHeader articleHeader"
+        "article tableOfContent"
+        "footer footer";
+
+    column-gap: 64px;
+
+    header {
+        grid-area: articleHeader;
+        text-align: center;
+        width: 100%;
+        // margin-top: 80px;
+
+        img {
+            object-fit: contain;
+            height: 200px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    article {
+        grid-area: article;
+        max-width: 704px;
+    }
+
+    aside {
+        // Alignement avec le markdown.
+        margin-top: 40px;
+        grid-area: tableOfContent;
+        max-width: 240px;
+
+        nav {
+            position: sticky;
+            top: 100px;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+.singleSectionLayout {
+    width: clamp(300px, 70vw, 700px);
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin: 40px 0;
+    color: $grey;
+    font-family: "catamaran";
+}
