@@ -8,3 +8,7 @@
 
 -   https://reacttricks.com/animating-next-page-transitions-with-framer-motion/
 -   https://reacttricks.com/nested-dynamic-layouts-in-next-apps/
+
+## Todos
+
+- Passer NextJS à 12.1.0
